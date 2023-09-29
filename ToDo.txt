@@ -1,0 +1,59 @@
+Constants.Baza
+	- Korisnik
+		Id : Int
+		Username : string
+		Password : string
+		Nickname : string
+	- Car
+		Id : Int
+		Price : Price (class)
+		CarTypeId : Int
+		HorePower : int
+		MaxSpeed : double
+		CurrentlyInStock : double
+	- Bike
+		Id : Int
+		Price : Price (class)
+		MaxSpeed : double
+		CurrentlyInStock : double
+	- Truck
+		Id : Int
+		Price : Price (class)
+		MaxLoadKg : int
+		HorsePower : int
+		MaxSpeed : double
+		CurrentlyInStock : double
+
+
+On program startup populate database tables with mock data. Add 10-100 records per table.
+
+On program startup fire "Login form"
+It will display "username" and "password" fields along with "Login" button.
+Bellow it there will be "Register button" which leads to Register form. Implement logic for registration
+
+Once successfully logged in move user to MainForm and hide Login form.
+Main form will show dashboard with some info and button to Manage Products > lead to new form
+Information displayed in dashboard is:
+ - Number of products in database
+ - Number of Cars
+ - Number of Trucks
+ - Number of Bikes
+ - Total worth of stock in $
+
+Inside managing products display dataGridView with all products listed (you will have additional column for product type).
+Use different colors for product type groups.
+Allow adding/changing/removing new product through datagridview and implement logic for it
+
+Implement validations on everything
+
+Create "Print" button on both dashboard and products managing windows. It will save file on selected destination.
+Also create "Send report via mail" on both places to send report to the mail (for this one create custom "InputBox(string title, string text,
+out string returnValue)", to work same as MessageBox.Show) to input email
+
+Deploy application using ClickOnce
+
+Make all buttons and textboxes bactrounds change colors like rainbow all the time, slowly.
+
+Once product is created/deleted inside "Manage products" window, immediatelly update dashboard information
+
+Note: Interfaces, Class deriving, Extensions
